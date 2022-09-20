@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div class="background__img"></div>
   <section id="landing-page">
     <nav>
       <figure>
@@ -40,22 +41,28 @@
     </nav>
     <header class="header">
       <div class="header__content">
-        <h1 class="title">
-          The number one source for everything
-          <br>
-          Breath of The Wild related
-        </h1>
-        <h2 class="header__para">
-          Learn from the best: <span class="gold">Hyrule Compendium</span>
-        </h2>
+        <div class="header__top">
+          <div class="header__text">
+            <h1 class="title">
+              The number one source for everything
+              <br>
+              Breath of The Wild related
+            </h1>
+            <h2 class="header__para">
+              Learn from the best: <span class="gold">Hyrule Compendium</span>
+            </h2>
+          </div>
+          <div class="input__wrapper">
+            <input type="text" placeholder="Search by Name, Category or Reigon">
+            <button class="not-loading loading">
+              <i class="fas fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+        <figure>
+          <img class="footer__img" src="./assets/BotW_Expansion_Pass_Artwork.png" alt="">
+        </figure>
       </div>
-      <div class="input-wrapper">
-        <input type="text" placeholder="Search by Name, Category or Reigon">
-        <button class="not-loading"></button>
-      </div>
-      <figure>
-        <img src="./assets/BotW_Expansion_Pass_Artwork.png" alt="">
-      </figure>
     </header>
   </section>
 </body>
