@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.html">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
   <title>Hyrule Compendium</title>
@@ -15,29 +16,31 @@
   <div class="background__img"></div>
   <section id="landing-page">
     <nav>
-      <figure>
-        <img id="hyrule-logo" src="./assets/logo.png" alt="">
-      </figure>
-      <ul class="nav__link--list">
-        <li class="nav__link">
-          <a href="#" class="
+      <div class="row">
+        <figure>
+          <img id="hyrule-logo" src="./assets/logo.png" alt="">
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a href="#" class="
           nav__link--anchor
           link__hover-effect"> Home
-          </a>
-        </li>
-        <li class="nav__link">
-          <a href="/index.html" class="
+            </a>
+          </li>
+          <li class="nav__link">
+            <a href="/index.html" class="
           nav__link--anchor
           link__hover-effect"> Compendium
-          </a>
-        </li>
-        <li class="nav__link">
-          <a href="#" class="
+            </a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="
           nav__link--anchor
           nav__link--anchor-primary"> Contact
-          </a>
-        </li>
-      </ul>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <header class="header">
       <div class="header__content">
@@ -54,8 +57,8 @@
           </div>
           <div class="input__wrapper">
             <input type="text" placeholder="Search by Name, Category or Reigon">
-            <button class="not-loading loading">
-              <i class="fas fa-magnifying-glass"></i>
+            <button class="search__button not-loading loading">
+              <img src="./assets/magnifying-glass-solid.svg" class="magnifying-glass" alt="">
             </button>
           </div>
         </div>
