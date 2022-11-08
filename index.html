@@ -6,14 +6,80 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="home.html">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  <title>Document</title>
+  <title>Hyrule Compendium</title>
 </head>
 
 <body>
+  <nav class="nav__compendium">
+    <div class="nav__background--img"></div>
+    <div class="row compendium__row">
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="/home.html" class="
+        nav__link--anchor
+        nav__link--compendium
+        link__hover-effect"> Home
+          </a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="
+        nav__link--anchor
+        nav__link--compendium
+        link__hover-effect"> Compendium
+          </a>
+        </li>
+        <li class="nav__link">
+          <a href="#" class="
+        nav__link--anchor
+        nav__link--compendium
+        nav__link--anchor-primary"> Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="compendium">
+    <div class="input__wrapper compendium__search">
+      <input type="text" placeholder="Search by Name, Category or Reigon">
+      <button class="search__button not-loading loading">
+        <img src="./assets/magnifying-glass-solid.svg" class="magnifying-glass" alt="">
+      </button>
+    </div>
+    <div class="container">
+      <div class="row__compendium">
+        <div class="object-list">
+          <div class="object">
+            <div class="object-card">
+              <div class="object-card__container">
 
+                <!--COMMONS-->
+                <h3 class="object__name">Data Name</h3>
+                <img class="object__img" src="">
+                <p class="object__headers"><b>Category:</b>Placeholder</p>
+                <p class="object__headers"><b>Common Locations:</b> Hyrule Ridge</p>
+                <p class="object__headers"><b>Descrption:</b> Placeholder</p>
+
+                <p class="object__headers"><b>Cooking Effect:</b> Placeholder</p>
+                <p class="object__headers"><b>Hearts_recovered:</b> Placeholder</p>
+
+                <p class="object__headers"><b>Drops:</b> Placeholder</p>
+
+                <p class="object__headers"><b>Attack:</b> Placeholder</p>
+                <p class="object__headers"><b>Defense:</b> Placeholder</p>
+
+                <br>
+                
+                <p><b class="object__headers">Debugging - ID: </b>${data.id}</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+<script src="index.js"></script>
 
 </html>

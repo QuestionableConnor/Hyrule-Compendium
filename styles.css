@@ -44,10 +44,11 @@ a{
   justify-content: space-between;
 }
 
-.container{
-  padding: 50px 0;
-  width: 100%;
+.compendium__search {
+  justify-content: center !important;
+  margin: 96px auto !important; 
 }
+
 
 input, text{
   width: 100%;
@@ -185,8 +186,73 @@ nav{
   margin: 0 12px;
 }
 
-.nav__link--anchor{
-  font-size: 18px;
+.nav__link--anchor {
+  font-size: 16px;
   color: rgb(240, 240, 240);
-  font-weight: 400;
+  font-weight: 700;
+}
+
+/*
+
+
+COMPENDIUM
+
+
+*/
+.nav__compendium{
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link--compendium{
+  color: rgb(45, 45, 45);
+}
+
+.nav__background--img{
+  position: fixed;
+  z-index: -1;
+  background-image: url(/assets/Nav_background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 150px;
+}
+
+#compendium{
+background-color: #292016;
+padding: 1px;
+}
+
+.compendium__row{
+  max-width: 1400px;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1280px;
+}
+
+
+.object{
+  width: 50%;
+}
+
+.object__name, .object__headers {
+  color: #b89e63 !important;
+  text-transform: capitalize;
+}
+
+.object-card{
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: rgb(245, 245, 245);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.object-card__container{
+  padding: 8px 24px;
+  margin: 36px 0;
 }
