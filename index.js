@@ -13,19 +13,33 @@ async function main() {
 
   //Logic that turns sorted array into html
   objectListEl.innerHTML = (sortedData.map(data => objectHTML(data)).join(""));
-  //console.log(dataArr)
-  //console.log(sortedData)
+  
+  
+  console.log(dataArr)
+  console.log(sortedData)
 
-  input.addEventListener("keyup", e => {
+  input.addEventListener("input", e => {
     const searchString = e.target.value;
-    console.log(searchString);
-    const filteredData = sortedData.filter(objects => {
-      return (
-        objects.name.toLowerCase().includes(searchString)
+    const filteredData = sortedData.filter(data => {
+      return (  
+        data.name.includes(searchString.toLowerCase())
       );
     });
-    objectHTML(filteredData);
-  })
+    filteredData.push(searchString)
+
+
+    console.log(filteredData)
+    
+    
+    for (i = 0; i < filteredData.length; i++) {
+      if (filteredData.indexOf(i) > -1) {
+        (i).style.display = '';
+      }
+      else {
+        (i).style.display = 'none';
+      }
+    }
+ })
 }
 
 main();
