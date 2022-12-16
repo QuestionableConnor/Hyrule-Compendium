@@ -33,10 +33,10 @@ async function main() {
     
     for (i = 0; i < filteredData.length; i++) {
       if (filteredData.indexOf(i) > -1) {
-        (i).style.display = '';
+        objectListEl.style.display = '';
       }
       else {
-        (i).style.display = 'none';
+        objectListEl.style.display = 'none';
       }
     }
  })
