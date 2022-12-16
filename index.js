@@ -3,6 +3,7 @@
 const objectListEl = document.querySelector(".object-list");
 const input = document.getElementById("search");
 
+
 async function main() {
   const objects = await fetch("https://botw-compendium.herokuapp.com/api/v2")
   const objectsData = await objects.json();
@@ -13,15 +14,15 @@ async function main() {
 
   //Logic that turns sorted array into html
   objectListEl.innerHTML = (sortedData.map(data => objectHTML(data)).join(""));
-  
-  
+
+
   console.log(dataArr)
   console.log(sortedData)
 
   input.addEventListener("input", e => {
     const searchString = e.target.value;
     const filteredData = sortedData.filter(data => {
-      return (  
+      return (
         data.name.includes(searchString.toLowerCase())
       );
     });
@@ -29,17 +30,18 @@ async function main() {
 
 
     console.log(filteredData)
-    
-    
-    for (i = 0; i < filteredData.length; i++) {
-      if (filteredData.indexOf(i) > -1) {
-        objectListEl.style.display = '';
+
+
+    for (i = 1; i < sortedData.length; i++) {
+      const card = document.getElementById(`object-card-${i}`);
+      if (filteredData.find(e => e.id === i)) {
+        card.style.display = ''
       }
       else {
-        objectListEl.style.display = 'none';
+        card.style.display = 'none'
       }
     }
- })
+  })
 }
 
 main();
@@ -64,7 +66,7 @@ function pushDataToArr(data, arrStore = []) {
 
 
 function objectHTML(data) {
-  return `<div class="object-card">
+  return `<div class="object-card id="object-card-${data.id}">
     <div class="object-card__container">
 
       <h3 class="object__name">${data.name}</h3>
