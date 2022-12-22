@@ -66,7 +66,7 @@ function pushDataToArr(data, arrStore = []) {
 
 
 function objectHTML(data) {
-  return `<div class="object-card id="object-card-${data.id}">
+  return `<div class="object-card" id="object-card-${data.id}">
     <div class="object-card__container">
 
       <h3 class="object__name">${data.name}</h3>
